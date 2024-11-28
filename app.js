@@ -22,4 +22,5 @@ var checkDead = setInterval(function () {
     //     blockDiv.style.display="none";
     //     alert("oombi!")
     // }
+    
 }, 10)
