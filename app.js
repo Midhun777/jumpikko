@@ -7,3 +7,5 @@ function jump(){
         player.classList.remove("jump-class")
     },500)
 }
+
+
