@@ -9,40 +9,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(132, 128, 123);
 }
 
 #game {
     height: 400px;
     width: 900px;
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 #player {
-    height: 70px;
-    width: 30px;
-    background-color: red;
+    height: 50px;
+    width: 40px;
+    /* background-color: red; */
     position: relative;
-    top: 330px;
-
+    top: 350px;
+    left: 50px;
 }
 
 #block {
     height: 40px;
-    width: 40px;
-    background-color: rgb(8, 0, 255);
+    width: 70px;
+    /* background-color: rgb(8, 0, 255); */
     position: relative;
     top: 290px;
     left: 860px;
-    animation: block 1s infinite linear;
+    animation: block 1.9s infinite linear;
 }
 
 .jump-class {
-    animation: jump 500ms infinite;
+    animation: jump 800ms infinite;
 }
 
 @keyframes jump {
     0% {
         top: 330px;
+    }
+
+    30% {
+        top: 270px;
     }
 
     50% {
@@ -51,6 +57,12 @@ body {
 
     70% {
         top: 250px;
+    }
+    80% {
+        top: 270px;
+    }
+    90% {
+        top: 300px;
     }
 
     100% {
