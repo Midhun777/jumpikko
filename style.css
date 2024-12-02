@@ -6,6 +6,7 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,10 +14,12 @@ body {
 }
 
 #game {
-    height: 400px;
-    width: 900px;
+    /* height: 400px;
+    width: 900px; */
+    height: 300px;
+    width: 100vw;
     border: 1px solid black;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 #player {
@@ -24,7 +27,7 @@ body {
     width: 40px;
     /* background-color: red; */
     position: relative;
-    top: 350px;
+    top: 220px;
     left: 50px;
 }
 
@@ -33,49 +36,50 @@ body {
     width: 70px;
     /* background-color: rgb(8, 0, 255); */
     position: relative;
-    top: 290px;
-    left: 860px;
-    animation: block 1.9s infinite linear;
+    top: 148px;
+    left: 200px;
+    /* left: 400px; */
+    animation: block 1.9s  infinite linear;
 }
 
 .jump-class {
-    animation: jump 800ms infinite;
+    animation: jump 2s infinite;
 }
 
 @keyframes jump {
     0% {
-        top: 330px;
+        top:200px;
     }
 
-    30% {
+    /* 30% {
         top: 270px;
-    }
+    } */
 
-    50% {
-        top: 250px;
+    50% { 
+        top: 100px;
     }
 
     70% {
-        top: 250px;
+        top: 100px;
     }
-    80% {
+    /* 80% {
         top: 270px;
     }
     90% {
         top: 300px;
-    }
+    } */
 
     100% {
-        top: 330px;
+        top: 200px;
     }
 }
 
 @keyframes block {
     0% {
-        left: 860px;
+        left:400px;
     }
 
     100% {
-        left: -40px;
+        left: -120px;
     }
 }

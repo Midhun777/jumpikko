@@ -14,8 +14,8 @@ function jump() {
 var checkDead = setInterval(function () {
     var playerTop = parseInt(window.getComputedStyle(player).getPropertyValue("top"));
     var blockLeft = parseInt(window.getComputedStyle(blockDiv).getPropertyValue("left"));
-    console.log(playerTop);
-    console.log(blockLeft);
+    // console.log(playerTop);
+    // console.log(blockLeft);
 
     // if(blockLeft>50 && blockLeft<=80 && playerTop>=330){
     //     blockDiv.style.animation="none";
