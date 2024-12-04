@@ -1,7 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    border: 1px solid rgb(239, 189, 189);
+    border: 1px solid rgb(11, 240, 72);
 }
 
 body {
@@ -40,11 +40,11 @@ body {
     top: 148px;
     left: 200px;
     /* left: 400px; */
-    animation: block 1.9s  infinite linear;
+    animation: block 1s infinite linear;
 }
 
 .jump-class {
-    animation: jump 2s infinite;
+    animation: jump 500ms;
 }
 
 @keyframes jump {
@@ -52,22 +52,12 @@ body {
         top:200px;
     }
 
-    /* 30% {
-        top: 270px;
-    } */
-
     50% { 
-        top: 100px;
+        top: 80px;
     }
 
-    70% {
-        top: 100px;
-    }
-    /* 80% {
-        top: 270px;
-    }
-    90% {
-        top: 300px;
+    /* 60% {
+        top: 80px;
     } */
 
     100% {
